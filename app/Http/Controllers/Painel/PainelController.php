@@ -6,24 +6,18 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 class PainelController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public $request;
+
+    public function __construct(Request $request)
     {
-        $this->middleware('auth');
+         $this->middleware('auth');
+         $this->request = $request;
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
         $user = Auth()->User();
         return view('Painel.index', compact('user'));
     }
+
 }

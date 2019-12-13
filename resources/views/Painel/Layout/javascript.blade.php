@@ -1,4 +1,5 @@
 <!-- jQuery -->
+
 <!-- {{ asset('AdminLTE/plugins/fontawesome-free/css/all.min.css')}} -->
 <script src="{{ asset('AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -9,6 +10,11 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+<script src="{{ asset('AdminLTE/plugins/datatables/jquery.dataTables.js')}}"></script>
+<script src="{{ asset('AdminLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
+
+
 <!-- ChartJS -->
 <script src="{{ asset('AdminLTE/plugins/chart.js/Chart.min.js')}}"></script>
 <!-- Sparkline -->
@@ -33,3 +39,17 @@
 <script src="{{ asset('AdminLTE/dist/js/pages/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('AdminLTE/dist/js/demo.js')}}"></script>
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    // $('#example1').DataTable({
+    //   "paging": true,
+    //   "lengthChange": true,
+    //   "searching": true,
+    //   "ordering": true,
+    //   "info": true,
+    //   "autoWidth": true,
+    // });
+  });
+</script>
+

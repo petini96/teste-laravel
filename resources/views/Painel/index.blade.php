@@ -1,13 +1,12 @@
 @extends('Painel.Layout.index')
   @section('content')
-<!-- content -->
   <section class="content">
       <div class="container-fluid">
-        
-         
+
+
       </div>
     </section>
-<!-- end content -->
+
   @endsection
 
 <!-- Small boxes (Stat box) -->
